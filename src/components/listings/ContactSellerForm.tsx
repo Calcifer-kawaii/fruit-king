@@ -6,10 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import {
-  createInquiry,
-  type ActionResult as InquiryResult,
-} from "@/lib/actions/inquiries";
+import { createInquiry } from "@/lib/actions/inquiries";
+import type { ActionResult as InquiryResult } from "@/lib/actions/types";
 
 interface ContactSellerFormProps {
   listingId: string;

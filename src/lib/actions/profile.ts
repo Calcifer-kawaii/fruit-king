@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { profileSchema } from "@/lib/validation/profile";
 import { getCurrentUser } from "@/lib/auth/getCurrentUser";
-import type { ActionResult } from "./listings";
+import type { ActionResult } from "./types";
 
 export async function updateProfile(
   _prev: ActionResult | undefined,

@@ -11,11 +11,8 @@ import { ListingImageUploader } from "./ListingImageUploader";
 import { FRUIT_TYPES } from "@/lib/constants/fruitTypes";
 import { PREFECTURES } from "@/lib/constants/prefectures";
 import { CURRENCIES } from "@/lib/constants/currencies";
-import {
-  createListing,
-  updateListing,
-  type ActionResult,
-} from "@/lib/actions/listings";
+import { createListing, updateListing } from "@/lib/actions/listings";
+import type { ActionResult } from "@/lib/actions/types";
 import type { ListingWithDetails } from "@/types/domain";
 
 interface ListingFormProps {

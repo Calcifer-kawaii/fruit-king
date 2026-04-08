@@ -11,7 +11,7 @@ import { AvatarUploader } from "./AvatarUploader";
 import {
   updateProfile,
 } from "@/lib/actions/profile";
-import type { ActionResult } from "@/lib/actions/listings";
+import type { ActionResult } from "@/lib/actions/types";
 import type { ProfileRow } from "@/types/database";
 
 interface ProfileFormProps {

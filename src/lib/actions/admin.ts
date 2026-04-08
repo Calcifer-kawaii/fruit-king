@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { assertAdmin } from "@/lib/auth/requireAdmin";
 import { createAdminClient } from "@/lib/supabase/admin";
-import type { ActionResult } from "./listings";
+import type { ActionResult } from "./types";
 
 export async function adminRemoveListing(id: string): Promise<ActionResult> {
   await assertAdmin();

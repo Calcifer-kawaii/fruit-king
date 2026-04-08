@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { inquirySchema } from "@/lib/validation/inquiry";
 import { getCurrentUser } from "@/lib/auth/getCurrentUser";
-import type { ActionResult } from "./listings";
+import type { ActionResult } from "./types";
 
 export async function createInquiry(
   listingId: string,

@@ -4,13 +4,7 @@ import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { listingSchema } from "@/lib/validation/listing";
 import { getCurrentUser } from "@/lib/auth/getCurrentUser";
-
-export interface ActionResult {
-  ok: boolean;
-  error?: string;
-  fieldErrors?: Record<string, string>;
-  id?: string;
-}
+import type { ActionResult } from "./types";
 
 function parseImages(formData: FormData): string[] {
   return formData
